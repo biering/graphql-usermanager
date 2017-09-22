@@ -1,0 +1,10 @@
+type Query {
+  me: User
+  user(id: Int): User
+  allUsers(limit: Int = 10): [User]!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
