@@ -1,6 +1,6 @@
 type Query {
   me: User
-  user(id: Int): User
+  user(id: String): User
   allUsers(limit: Int = 10): [User]!
 }
 
